@@ -2,8 +2,8 @@
 <body>
   <div id="container">
     <div id="wrap">
-      <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-      <div class="outer">
+    <%- partial('_partial/sidebar') %>
+      <div class="content">
         <section id="main"><%- body %></section>
       </div>
     </div>

@@ -1,13 +1,5 @@
 #header
-  height: banner-height
-  position: relative
-  border-bottom: 1px solid color-border
-  &:before, &:after
-    content: ""
-    position: absolute
-    left: 0
-    right: 0
-    height: 40px
+  min-height: banner-height
 
 #header-outer
   height: 100%
@@ -30,9 +22,6 @@
 #header-title
   height: logo-size
   position: absolute
-  top: 50%
-  left: 0
-  margin-top: logo-size * -0.5
 
 $logo-text
   text-decoration: none
@@ -40,10 +29,10 @@ $logo-text
   font-weight: bold
 
 #logo
-  @extend $logo-text
-  font-size: logo-size
-  line-height: logo-size
-  letter-spacing: 2px
+  font-size: 48px
+  font-family: font-sans
+  font-weight: bold
+  padding-bottom: 40px
 
 #subtitle
   color: #A1A1A1
@@ -51,7 +40,7 @@ $logo-text
   line-height: subtitle-size
   letter-spacing: 1px
   text-decoration: none
-  margin-top: subtitle-size
+  padding-bottom: 40px
 
 #main-nav
   float: left

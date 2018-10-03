@@ -1,4 +1,7 @@
-<aside id="sidebar"<% if (theme.sidebar === 'bottom'){ %> class="outer"<% } %>>
+<aside id="sidebar">
+<a href="/">
+<%- image_tag('css/images/SEILogo.png', {class: 'sei-logo'}) %></a>
+  <input type="text" placeholder="search" class="search-bar">
   <% theme.widgets.forEach(function(widget){ %>
     <%- partial('_widget/' + widget) %>
   <% }) %>
